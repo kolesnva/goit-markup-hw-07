@@ -185,11 +185,27 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-@mixin portfolio-overlay-font() {
+@mixin projects-subtitle-font() {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+@mixin projects-text-font() {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+@mixin portfolio-overlay-font() {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
 }
