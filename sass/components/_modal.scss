@@ -24,6 +24,29 @@
   transform: scale(1) translate(-50%, -50%);
   transition: transform var(--main-effects-option);
 }
+.modal-close-btn {
+  @extend %flex-elements;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus .close-icon {
+    fill: var(--main-blue-color);
+  }
+}
+
+.close-icon {
+  transition: fill var(--main-effects-option);
+}
+
 .modal-title {
   margin-bottom: 12px;
   @include modal-title-font();
@@ -126,4 +149,24 @@
   color: var(--main-blue-color);
   text-decoration: underline solid var(--main-blue-color);
   text-decoration-skip-ink: none;
+}
+.modal-submit-btn {
+  @extend %flex-elements;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--main-blue-color);
+  border: none;
+  border-radius: 4px;
+  @include main-buttons-font();
+  color: var(--main-white-color);
+  cursor: pointer;
+  transition: color var(--main-effects-option),
+    background-color var(--main-effects-option);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+  }
 }
