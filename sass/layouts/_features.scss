@@ -25,7 +25,7 @@
 }
 .features-subtitle {
   margin-bottom: 10px;
-  @include subtitles-font();
+  @include features-subtitles-font();
   color: var(--secondary-black-color);
 }
 .features-text {

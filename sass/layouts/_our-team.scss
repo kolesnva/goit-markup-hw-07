@@ -8,13 +8,7 @@
 }
 .our-team-member {
   margin-bottom: 10px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include our-team-subtitle-font();
   color: var(--secondary-black-color);
 }
 .our-team-item {
@@ -27,19 +21,12 @@
     margin-right: 0px;
   }
 }
-
 .team-mate-info {
   padding: 30px 32px;
 }
 .our-team-position {
   margin-bottom: 16px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include our-team-text-font();
   color: var(--main-text-color);
 }
 .social-links-list {

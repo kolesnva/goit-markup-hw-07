@@ -71,7 +71,8 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-@mixin subtitles-font() {
+
+@mixin features-subtitles-font() {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -97,6 +98,24 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@mixin our-team-subtitle-font() {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@mixin our-team-text-font() {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 @mixin footer-subscribe-font() {
   font-family: Roboto, sans-serif;
