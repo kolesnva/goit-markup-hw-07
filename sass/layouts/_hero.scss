@@ -1,3 +1,12 @@
+.hero-section-title {
+  max-width: 696px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @include hero-title-font();
+  color: var(--main-white-color);
+}
 .hero-section {
   width: 1600px;
   max-width: 100%;

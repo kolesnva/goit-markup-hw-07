@@ -1,3 +1,8 @@
+.our-work-title {
+  margin-bottom: 50px;
+  @include main-title-font();
+  color: var(--secondary-black-color);
+}
 .our-work-list {
   display: flex;
   flex-wrap: wrap;

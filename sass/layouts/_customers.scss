@@ -1,8 +1,13 @@
+.customers__title {
+  margin-bottom: 50px;
+  @include main-title-font();
+  color: var(--secondary-black-color);
+}
 .customers-list {
   display: flex;
   justify-content: center;
 }
-.customer-link {
+.customer-item__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -15,15 +20,15 @@
   &:focus {
     border-color: var(--main-blue-color);
   }
-  &:hover .customer-icon,
-  &:focus .customer-icon {
+  &:hover .customer-item__icon,
+  &:focus .customer-item__icon {
     fill: var(--main-blue-color);
   }
 }
-.customer-item:not(:last-child) {
+.customers-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.customer-icon {
+.customer-item__icon {
   width: 106px;
   height: 60px;
   fill: var(--social-links-icon-color);

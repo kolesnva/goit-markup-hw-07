@@ -24,7 +24,11 @@
   transform: scale(1) translate(-50%, -50%);
   transition: transform var(--main-effects-option);
 }
-
+.modal-title {
+  margin-bottom: 12px;
+  @include modal-title-font();
+  color: var(--secondary-black-color);
+}
 .form-field {
   margin-bottom: 10px;
 }

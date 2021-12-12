@@ -451,70 +451,6 @@ body {
   color: var(--button-hover-text-color);
 }
 
-.customers-title {
-  margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-black-color);
-}
-
-.hero-section-title {
-  max-width: 696px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
-
-.our-team-title {
-  margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-black-color);
-}
-
-.our-work-title {
-  margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-black-color);
-}
-
-.modal-title {
-  margin-bottom: 12px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--secondary-black-color);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -669,6 +605,23 @@ body {
   transition: fill var(--main-effects-option);
 }
 
+.hero-section-title {
+  max-width: 696px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
 .hero-section {
   width: 1600px;
   max-width: 100%;
@@ -732,6 +685,18 @@ body {
   color: var(--main-text-color);
 }
 
+.our-work-title {
+  margin-bottom: 50px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-black-color);
+}
+
 .our-work-list {
   display: flex;
   flex-wrap: wrap;
@@ -775,6 +740,18 @@ body {
 
 .our-team-section {
   background-color: var(--secondary-background-color);
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-black-color);
 }
 
 .our-team-list {
@@ -859,12 +836,24 @@ body {
   transition: fill var(--main-effects-option);
 }
 
+.customers__title {
+  margin-bottom: 50px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-black-color);
+}
+
 .customers-list {
   display: flex;
   justify-content: center;
 }
 
-.customer-link {
+.customer-item__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -875,20 +864,20 @@ body {
   transition: border-color var(--main-effects-option);
 }
 
-.customer-link:hover, .customer-link:focus {
+.customer-item__link:hover, .customer-item__link:focus {
   border-color: var(--main-blue-color);
 }
 
-.customer-link:hover .customer-icon,
-.customer-link:focus .customer-icon {
+.customer-item__link:hover .customer-item__icon,
+.customer-item__link:focus .customer-item__icon {
   fill: var(--main-blue-color);
 }
 
-.customer-item:not(:last-child) {
+.customers-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customer-icon {
+.customer-item__icon {
   width: 106px;
   height: 60px;
   fill: var(--social-links-icon-color);
@@ -1174,6 +1163,17 @@ body {
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
   transition: transform var(--main-effects-option);
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--secondary-black-color);
 }
 
 .form-field {
