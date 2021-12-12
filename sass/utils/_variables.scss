@@ -124,6 +124,14 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+@mixin footer-input-font() {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
 // MODAL FONTS
 @mixin modal-title-font() {
   font-family: Roboto, sans-serif;

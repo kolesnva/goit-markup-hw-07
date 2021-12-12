@@ -534,51 +534,6 @@ body {
   pointer-events: none;
 }
 
-.contacts-list {
-  display: flex;
-  margin-left: 305px;
-  justify-content: center;
-  align-content: center;
-}
-
-.contacts-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contacts-link {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  transition: color var(--main-effects-option);
-}
-
-.contacts-link:hover, .contacts-link:focus, .contacts-link:active {
-  color: var(--main-blue-color);
-}
-
-.contacts-link:hover .contacts-icon,
-.contacts-link:focus .contacts-icon,
-.contacts-link:active .contacts-icon {
-  fill: var(--main-blue-color);
-}
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: var(--main-text-color);
-  transition: fill var(--main-effects-option);
-}
-
 .header {
   border-bottom: solid 1px var(--header-bottom-border-color);
 }
@@ -667,6 +622,51 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: 305px;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  transition: color var(--main-effects-option);
+}
+
+.contacts-link:hover, .contacts-link:focus, .contacts-link:active {
+  color: var(--main-blue-color);
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon,
+.contacts-link:active .contacts-icon {
+  fill: var(--main-blue-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  transition: fill var(--main-effects-option);
 }
 
 .hero-section {
@@ -999,7 +999,7 @@ body {
 
 .join-phrase {
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

@@ -78,13 +78,7 @@
 }
 .join-phrase {
   margin-bottom: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @include footer-subscribe-font();
   color: var(--main-white-color);
 }
 .join-link-icon {
@@ -99,13 +93,7 @@
 }
 .footer-subscribe-title {
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @include footer-subscribe-font();
   color: var(--main-white-color);
 }
 .footer-input {
@@ -119,12 +107,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include footer-input-font();
   color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
