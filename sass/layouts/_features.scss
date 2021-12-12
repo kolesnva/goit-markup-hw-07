@@ -25,21 +25,10 @@
 }
 .features-subtitle {
   margin-bottom: 10px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @include subtitles-font();
   color: var(--secondary-black-color);
 }
 .features-text {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include main-text-font();
   color: var(--main-text-color);
 }
