@@ -78,12 +78,7 @@
     border-color: var(--main-blue-color);
   }
   &::placeholder {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include modal-label-font();
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -92,12 +87,7 @@
 }
 .modal-check-text {
   @extend %flex-elements;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include modal-check-font();
   color: var(--main-text-color);
   span {
     @extend %flex-elements;
@@ -128,12 +118,7 @@
   }
 }
 .terms-link {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include modal-check-font();
   color: var(--main-blue-color);
   text-decoration: underline solid var(--main-blue-color);
   text-decoration-skip-ink: none;
