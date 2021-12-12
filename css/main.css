@@ -635,11 +635,11 @@ body {
   color: var(--main-white-color);
 }
 
-.our-team-section {
+.team {
   background-color: var(--secondary-background-color);
 }
 
-.our-team-title {
+.team__title {
   margin-bottom: 50px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -651,12 +651,12 @@ body {
   color: var(--secondary-black-color);
 }
 
-.our-team-list {
+.team-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-team-member {
+.team__item-title {
   margin-bottom: 10px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -668,22 +668,22 @@ body {
   color: var(--secondary-black-color);
 }
 
-.our-team-item {
+.team__item {
   margin-right: 30px;
   background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-item:nth-child(4n) {
+.team__item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.team-mate-info {
+.team__item-info {
   padding: 30px 32px;
 }
 
-.our-team-position {
+.team__item-text {
   margin-bottom: 16px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -695,21 +695,21 @@ body {
   color: var(--main-text-color);
 }
 
-.social-links-list {
+.team__socials-list {
   display: flex;
   justify-content: center;
 }
 
-.social-links-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.social-links-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link {
+.socials__item-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -719,16 +719,16 @@ body {
   transition: background-color var(--main-effects-option);
 }
 
-.social-link:hover, .social-link:focus {
+.socials__item-link:hover, .socials__item-link:focus {
   background-color: var(--main-blue-color);
 }
 
-.social-link:hover .social-link-icon,
-.social-link:focus .social-link-icon {
+.socials__item-link:hover .social-link-icon,
+.socials__item-link:focus .social-link-icon {
   fill: var(--main-white-color);
 }
 
-.social-link-icon {
+.social-icon {
   fill: var(--social-links-icon-color);
   transition: fill var(--main-effects-option);
 }
