@@ -479,7 +479,7 @@ body {
   transition: fill var(--main-effects-option);
 }
 
-.hero-section-title {
+.hero__title {
   max-width: 696px;
   height: auto;
   margin-left: auto;
@@ -496,7 +496,7 @@ body {
   color: var(--main-white-color);
 }
 
-.hero-section {
+.hero {
   width: 1600px;
   max-width: 100%;
   padding-top: 200px;
@@ -508,7 +508,7 @@ body {
   background-size: cover;
 }
 
-.hero-section-btn {
+.hero__order-btn {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -526,7 +526,7 @@ body {
   transition: color var(--main-effects-option), background-color var(--main-effects-option);
 }
 
-.hero-section-btn:hover, .hero-section-btn:active, .hero-section-btn:focus {
+.hero__order-btn:hover, .hero__order-btn:active, .hero__order-btn:focus {
   background-color: var(--button-hover-color);
   color: var(--button-hover-text-color);
 }
@@ -1305,7 +1305,7 @@ body {
   color: var(--button-hover-text-color);
 }
 
-.hero-section-btn, .subscribe-button, .filter-btn, .modal-close-btn, .modal__checkbox-text, .modal__checkbox-text span, .modal__submit-button {
+.hero__order-btn, .subscribe-button, .filter-btn, .modal-close-btn, .modal__checkbox-text, .modal__checkbox-text span, .modal__submit-button {
   display: flex;
   align-items: center;
   text-align: center;

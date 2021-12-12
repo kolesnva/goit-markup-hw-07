@@ -1,4 +1,4 @@
-.hero-section-title {
+.hero__title {
   max-width: 696px;
   height: auto;
   margin-left: auto;
@@ -7,7 +7,7 @@
   @include hero-title-font();
   color: var(--main-white-color);
 }
-.hero-section {
+.hero {
   width: 1600px;
   max-width: 100%;
   padding-top: 200px;
@@ -22,7 +22,7 @@
   background-position: center;
   background-size: cover;
 }
-.hero-section-btn {
+.hero__order-btn {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
