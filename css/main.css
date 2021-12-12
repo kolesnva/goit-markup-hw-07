@@ -867,6 +867,9 @@ body {
 .customer-link {
   width: 170px;
   height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: solid 1px var(--social-links-icon-color);
   transition: border-color var(--main-effects-option);
@@ -920,6 +923,10 @@ body {
   color: var(--main-white-color);
 }
 
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-contacts-item-adress {
   margin-bottom: 9px;
   font-family: Roboto, sans-serif;
@@ -929,10 +936,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
-}
-
-.footer-contacts-item-adress:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .contacts-link-footer {
@@ -1302,7 +1305,7 @@ body {
   text-decoration-skip-ink: none;
 }
 
-.hero-section-btn, .footer-button, .filter-btn, .modal-close-btn, .modal-submit-btn, .customer-link, .modal-check-text, .modal-check-text span {
+.hero-section-btn, .footer-button, .filter-btn, .modal-close-btn, .modal-submit-btn, .modal-check-text, .modal-check-text span {
   display: flex;
   align-items: center;
   text-align: center;

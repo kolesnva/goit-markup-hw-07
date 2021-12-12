@@ -5,7 +5,9 @@
 .customer-link {
   width: 170px;
   height: 92px;
-  @extend %flex-elements;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: solid 1px var(--social-links-icon-color);
   transition: border-color var(--main-effects-option);

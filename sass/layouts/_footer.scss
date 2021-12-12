@@ -6,12 +6,7 @@
 .footer-logo-link {
   display: block;
   margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include logo-font();
   color: var(--main-blue-color);
 }
 .logo-footer {
@@ -23,28 +18,17 @@
   letter-spacing: 0.03em;
   color: var(--main-white-color);
 }
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-contacts-item-adress {
   margin-bottom: 9px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include footer-adress-font();
   color: var(--main-white-color);
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
 }
 
 .contacts-link-footer {
-  text-decoration: none;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include footer-contacts-link-font();
   color: var(--transparent-white-color);
   transition: color var(--main-effects-option);
   &:hover,
