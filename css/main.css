@@ -764,7 +764,7 @@ body {
   transition: transform var(--main-effects-option);
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
