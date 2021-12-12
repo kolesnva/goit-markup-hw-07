@@ -9,10 +9,11 @@
 .features-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  &:nth-child(4n) {
+    margin: 0px;
+  }
 }
-.features-item:nth-child(4n) {
-  margin: 0px;
-}
+
 .feature-icon-container {
   display: flex;
   width: 270px;

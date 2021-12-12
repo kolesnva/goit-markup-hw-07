@@ -581,15 +581,7 @@ body {
   transition: color var(--main-effects-option);
 }
 
-.contacts-icon {
-  margin-right: 10px;
-  fill: var(--main-text-color);
-  transition: fill var(--main-effects-option);
-}
-
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link:active {
+.contacts-link:hover, .contacts-link:focus, .contacts-link:active {
   color: var(--main-blue-color);
 }
 
@@ -597,6 +589,12 @@ body {
 .contacts-link:focus .contacts-icon,
 .contacts-link:active .contacts-icon {
   fill: var(--main-blue-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  transition: fill var(--main-effects-option);
 }
 
 .header {
@@ -608,7 +606,6 @@ body {
   align-items: center;
 }
 
-/* LOGO */
 .header-logo {
   margin-right: 93px;
   padding-top: 24px;
@@ -660,9 +657,7 @@ body {
   transition: color var(--main-effects-option);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
+.nav-link:hover, .nav-link:focus, .nav-link:active {
   color: var(--main-blue-color);
 }
 
@@ -755,10 +750,6 @@ body {
   color: var(--main-text-color);
 }
 
-.our-work-section {
-  padding-top: 0px;
-}
-
 .our-work-list {
   display: flex;
   flex-wrap: wrap;
@@ -772,6 +763,10 @@ body {
 
 .our-work-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.our-work-item:hover .our-work-overlay {
+  transform: translateY(0);
 }
 
 .our-work-overlay {
@@ -794,10 +789,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-white-color);
-}
-
-.our-work-item:hover .our-work-overlay {
-  transform: translateY(0);
 }
 
 .our-team-section {
@@ -872,8 +863,7 @@ body {
   transition: background-color var(--main-effects-option);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--main-blue-color);
 }
 
@@ -903,6 +893,15 @@ body {
   transition: border-color var(--main-effects-option);
 }
 
+.customer-link:hover, .customer-link:focus {
+  border-color: var(--main-blue-color);
+}
+
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: var(--main-blue-color);
+}
+
 .customer-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -912,16 +911,6 @@ body {
   height: 60px;
   fill: var(--social-links-icon-color);
   transition: fill var(--main-effects-option);
-}
-
-.customer-link:hover,
-.customer-link:focus {
-  border-color: var(--main-blue-color);
-}
-
-.customer-link:hover .customer-icon,
-.customer-link:focus .customer-icon {
-  fill: var(--main-blue-color);
 }
 
 .footer {
@@ -963,7 +952,7 @@ body {
   color: var(--main-white-color);
 }
 
-.footer-contacts-item:not(:last-child) {
+.footer-contacts-item-adress:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -979,9 +968,7 @@ body {
   transition: color var(--main-effects-option);
 }
 
-.contacts-link-footer:hover,
-.contacts-link-footer:focus,
-.contacts-link-footer:active {
+.contacts-link-footer:hover, .contacts-link-footer:focus, .contacts-link-footer:active {
   color: var(--main-blue-color);
 }
 
@@ -1024,6 +1011,10 @@ body {
   transition: background-color var(--main-effects-option);
 }
 
+.join-link:hover, .join-link:focus {
+  background-color: var(--main-blue-color);
+}
+
 .join-phrase {
   margin-bottom: 20px;
   font-family: Roboto;
@@ -1038,11 +1029,6 @@ body {
 
 .join-link-icon {
   fill: var(--main-white-color);
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--main-blue-color);
 }
 
 .subscribe-container {
@@ -1109,6 +1095,10 @@ body {
   height: auto;
 }
 
+.projects-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
 .project-link {
   display: block;
   max-width: 100%;
@@ -1116,14 +1106,14 @@ body {
   transition: box-shadow var(--main-effects-option);
 }
 
-.projects-item:nth-child(3n) {
-  margin-right: 0px;
+.project-link:hover, .project-link:focus, .project-link:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-link:hover,
-.project-link:focus,
-.project-link:active {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-link:hover .project-about,
+.project-link:focus .project-about,
+.project-link:active .project-about {
+  transform: translateY(0);
 }
 
 .projects-text-container {
@@ -1175,12 +1165,6 @@ body {
   transition: transform var(--main-effects-option), background-color var(--main-effects-option);
   padding: 63px 24px;
   height: 100%;
-}
-
-.project-link:hover .project-about,
-.project-link:focus .project-about,
-.project-link:active .project-about {
-  transform: translateY(0);
 }
 
 .backdrop {

@@ -23,19 +23,19 @@
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   transition: color var(--main-effects-option);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--main-blue-color);
+  }
+  &:hover .contacts-icon,
+  &:focus .contacts-icon,
+  &:active .contacts-icon {
+    fill: var(--main-blue-color);
+  }
 }
 .contacts-icon {
   margin-right: 10px;
   fill: var(--main-text-color);
   transition: fill var(--main-effects-option);
-}
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link:active {
-  color: var(--main-blue-color);
-}
-.contacts-link:hover .contacts-icon,
-.contacts-link:focus .contacts-icon,
-.contacts-link:active .contacts-icon {
-  fill: var(--main-blue-color);
 }
