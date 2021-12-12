@@ -582,7 +582,7 @@ body {
   color: var(--main-text-color);
 }
 
-.our-work-title {
+.our-work__title {
   margin-bottom: 50px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -599,21 +599,21 @@ body {
   flex-wrap: wrap;
 }
 
-.our-work-item {
+.our-work-list__item {
   margin-right: 30px;
   position: relative;
   overflow: hidden;
 }
 
-.our-work-item:nth-child(3n) {
+.our-work-list__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.our-work-item:hover .our-work-overlay {
+.our-work-list__item:hover .our-work__item-overlay {
   transform: translateY(0);
 }
 
-.our-work-overlay {
+.our-work__item-overlay {
   width: 100%;
   height: 70px;
   padding: 27px 0px 27px 0px;

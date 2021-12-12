@@ -1,4 +1,4 @@
-.our-work-title {
+.our-work__title {
   margin-bottom: 50px;
   @include main-title-font();
   color: var(--secondary-black-color);
@@ -7,19 +7,19 @@
   display: flex;
   flex-wrap: wrap;
 }
-.our-work-item {
+.our-work-list__item {
   margin-right: 30px;
   position: relative;
   overflow: hidden;
   &:nth-child(3n) {
     margin-right: 0px;
   }
-  &:hover .our-work-overlay {
+  &:hover .our-work__item-overlay {
     transform: translateY(0);
   }
 }
 
-.our-work-overlay {
+.our-work__item-overlay {
   width: 100%;
   height: 70px;
   padding: 27px 0px 27px 0px;
