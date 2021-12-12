@@ -1,12 +1,6 @@
 .customers-title {
   margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include main-title-font();
   color: var(--secondary-black-color);
 }
 .hero-section-title {
@@ -15,47 +9,21 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  @include hero-title-font();
   color: var(--main-white-color);
 }
 .our-team-title {
   margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include main-title-font();
   color: var(--secondary-black-color);
 }
 .our-work-title {
   margin-bottom: 50px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include main-title-font();
   color: var(--secondary-black-color);
 }
 .modal-title {
   margin-bottom: 12px;
-  text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include modal-title-font();
   color: var(--secondary-black-color);
 }
