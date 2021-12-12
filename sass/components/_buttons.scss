@@ -19,13 +19,14 @@
   cursor: pointer;
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+  }
 }
-.hero-section-btn:hover,
-.hero-section-btn:active,
-.hero-section-btn:focus {
-  background-color: var(--button-hover-color);
-  color: var(--button-hover-text-color);
-}
+
 .footer-button {
   display: flex;
   margin-left: auto;
@@ -47,18 +48,19 @@
   cursor: pointer;
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+    fill: var(--button-hover-text-color);
+  }
 }
 .sub-icon {
   margin-left: 10px;
   fill: var(--main-white-color);
 }
-.footer-button:hover,
-.footer-button:focus,
-.footer-button:active {
-  background-color: var(--button-hover-color);
-  color: var(--button-hover-text-color);
-  fill: var(--button-hover-text-color);
-}
+
 .filter-btn {
   padding: 6px 22px 6px 22px;
   border: none;
@@ -76,19 +78,20 @@
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option),
     box-shadow var(--main-effects-option);
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 .filter-btn.current {
   background-color: var(--main-blue-color);
   color: var(--main-white-color);
 }
-.filter-btn:focus,
-.filter-btn:hover,
-.filter-btn:active {
-  background-color: var(--main-blue-color);
-  color: var(--main-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 .modal-close-btn {
   position: absolute;
   right: 8px;
@@ -101,17 +104,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus .close-icon {
+    fill: var(--main-blue-color);
+  }
 }
-.modal-close-btn:hover {
-  cursor: pointer;
-}
+
 .close-icon {
   transition: fill var(--main-effects-option);
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus .close-icon {
-  fill: var(--main-blue-color);
-}
+
 .modal-submit-btn {
   display: block;
   padding: 10px 32px;
@@ -133,10 +138,10 @@
   cursor: pointer;
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option);
-}
-.modal-submit-btn:hover,
-.modal-submit-btn:active,
-.modal-submit-btn:focus {
-  background-color: var(--button-hover-color);
-  color: var(--button-hover-text-color);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+  }
 }
