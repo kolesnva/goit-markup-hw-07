@@ -348,7 +348,7 @@ body {
   border-bottom: solid 1px var(--header-bottom-border-color);
 }
 
-.header-container {
+.header-wrap {
   display: flex;
   align-items: center;
 }
@@ -366,7 +366,7 @@ body {
   color: var(--main-blue-color);
 }
 
-.r-logo-header {
+.header-logo__right {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -385,11 +385,11 @@ body {
   display: flex;
 }
 
-.nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.nav__item-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -404,11 +404,11 @@ body {
   transition: color var(--main-effects-option);
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:active {
+.nav__item-link:hover, .nav__item-link:focus, .nav__item-link:active {
   color: var(--main-blue-color);
 }
 
-.nav-link-current {
+.nav__item-link-current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -423,7 +423,7 @@ body {
   position: relative;
 }
 
-.nav-link-current::after {
+.nav__item-link-current::after {
   content: "";
   background-color: var(--main-blue-color);
   width: 100%;
@@ -434,18 +434,18 @@ body {
   bottom: -1px;
 }
 
-.contacts-list {
+.header-contacts-list {
   display: flex;
   margin-left: 305px;
   justify-content: center;
   align-content: center;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.contacts-link {
+.contacts-item__link {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -463,13 +463,13 @@ body {
   transition: color var(--main-effects-option);
 }
 
-.contacts-link:hover, .contacts-link:focus, .contacts-link:active {
+.contacts-item__link:hover, .contacts-item__link:focus, .contacts-item__link:active {
   color: var(--main-blue-color);
 }
 
-.contacts-link:hover .contacts-icon,
-.contacts-link:focus .contacts-icon,
-.contacts-link:active .contacts-icon {
+.contacts-item__link:hover .contacts-icon,
+.contacts-item__link:focus .contacts-icon,
+.contacts-item__link:active .contacts-icon {
   fill: var(--main-blue-color);
 }
 
