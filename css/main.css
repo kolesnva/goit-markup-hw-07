@@ -326,7 +326,6 @@ body {
 }
 
 .hero-section-btn {
-  display: block;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -338,9 +337,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   cursor: pointer;
@@ -353,7 +349,6 @@ body {
 }
 
 .footer-button {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 28px 10px 29px;
@@ -365,9 +360,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   cursor: pointer;
@@ -394,7 +386,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--secondary-background-color);
   color: var(--secondary-black-color);
@@ -422,9 +413,6 @@ body {
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-close-btn:hover {
@@ -441,7 +429,6 @@ body {
 }
 
 .modal-submit-btn {
-  display: block;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -453,9 +440,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   cursor: pointer;
@@ -1232,7 +1216,7 @@ body {
 .input-label {
   display: block;
   margin-bottom: 4px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1277,9 +1261,6 @@ body {
 }
 
 .modal-check-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1290,9 +1271,6 @@ body {
 }
 
 .modal-check-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-black-color);
@@ -1327,5 +1305,11 @@ body {
   color: var(--main-blue-color);
   text-decoration: underline solid var(--main-blue-color);
   text-decoration-skip-ink: none;
+}
+
+.hero-section-btn, .footer-button, .filter-btn, .modal-close-btn, .modal-submit-btn, .modal-check-text, .modal-check-text span {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

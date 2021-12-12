@@ -7,10 +7,11 @@
   left: 0;
   transition: opacity var(--main-effects-option),
     visibility var(--main-effects-option);
+  &.is-hidden .modal {
+    transform: scale(0.5) rotate(180deg);
+  }
 }
-.backdrop.is-hidden .modal {
-  transform: scale(0.5) rotate(180deg);
-}
+
 .modal {
   width: 528px;
   min-height: 581px;
@@ -56,12 +57,7 @@
 .input-label {
   display: block;
   margin-bottom: 4px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include modal-label-font();
   color: var(--main-text-color);
 }
 .comment-field {
@@ -95,9 +91,7 @@
   margin-bottom: 30px;
 }
 .modal-check-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-elements;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -106,9 +100,7 @@
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-elements;
     width: 16px;
     height: 15px;
     border: 2px solid var(--main-black-color);
