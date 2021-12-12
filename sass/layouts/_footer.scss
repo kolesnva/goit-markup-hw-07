@@ -3,27 +3,22 @@
   padding-bottom: 60px;
   background-color: var(--main-background-color);
 }
-.footer-logo-link {
+.footer-logo {
   display: block;
   margin-bottom: 20px;
   @include logo-font();
   color: var(--main-blue-color);
 }
-.logo-footer {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.footer-logo__right {
+  @include logo-font();
   color: var(--main-white-color);
 }
-.footer-contacts-item:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-contacts-item-adress {
+.footer-contacts__item-address {
   margin-bottom: 9px;
-  @include footer-adress-font();
+  @include footer-address-font();
   color: var(--main-white-color);
 }
 
@@ -38,22 +33,22 @@
   }
 }
 
-.footer-container {
+.footer__wrap {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-.join-container {
+.join-us {
   display: block;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin-left: 70px;
 }
-.join-list {
+.join-us-list {
   display: flex;
 }
-.join-links-item {
+.join-us__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -62,7 +57,7 @@
   }
 }
 
-.join-link {
+.join-us__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -76,27 +71,27 @@
     background-color: var(--main-blue-color);
   }
 }
-.join-phrase {
+.join-us__text {
   margin-bottom: 20px;
   @include footer-subscribe-font();
   color: var(--main-white-color);
 }
-.join-link-icon {
+.join-us__icon {
   fill: var(--main-white-color);
 }
 
-.subscribe-container {
+.subscribe {
   margin-left: 93px;
 }
-.footer-form {
+.subscribe-form {
   display: flex;
 }
-.footer-subscribe-title {
+.subscribe__title {
   margin-bottom: 20px;
   @include footer-subscribe-font();
   color: var(--main-white-color);
 }
-.footer-input {
+.subscribe-input {
   display: block;
   padding-left: 16px;
   padding-top: 15px;
