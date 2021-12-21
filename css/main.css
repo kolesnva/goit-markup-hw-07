@@ -501,6 +501,9 @@ body {
 }
 
 .hero__order-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -933,6 +936,9 @@ body {
 }
 
 .subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 28px 10px 29px;
@@ -969,6 +975,9 @@ body {
 }
 
 .project__filter-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 6px 22px 6px 22px;
   border: none;
   border-radius: 4px;
@@ -1111,6 +1120,9 @@ body {
 }
 
 .modal-close-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -1136,12 +1148,12 @@ body {
 
 .modal__title {
   margin-bottom: 12px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
   color: var(--secondary-black-color);
 }
 
@@ -1183,10 +1195,9 @@ body {
 .input__label {
   display: block;
   margin-bottom: 4px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: Roboto;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
@@ -1214,10 +1225,9 @@ body {
 }
 
 .modal__comment-area::placeholder {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: Roboto;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -1231,16 +1241,21 @@ body {
 }
 
 .modal__checkbox-text {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .modal__checkbox-text span {
+  display: flex;
+  align-items: center;
+  text-align: center;
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-black-color);
@@ -1266,10 +1281,9 @@ body {
 }
 
 .checkbox__terms {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Roboto;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-blue-color);
@@ -1278,16 +1292,18 @@ body {
 }
 
 .modal__submit-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-blue-color);
   border: none;
   border-radius: 4px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  font-family: Roboto;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
@@ -1298,11 +1314,5 @@ body {
 .modal__submit-button:hover, .modal__submit-button:active, .modal__submit-button:focus {
   background-color: var(--button-hover-color);
   color: var(--button-hover-text-color);
-}
-
-.hero__order-btn, .subscribe-button, .project__filter-btn, .modal-close-btn, .modal__checkbox-text, .modal__checkbox-text span, .modal__submit-button {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

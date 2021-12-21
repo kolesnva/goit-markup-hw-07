@@ -25,7 +25,9 @@
   transition: transform var(--main-effects-option);
 }
 .modal-close-btn {
-  @extend %flex-elements;
+  display: flex;
+  align-items: center;
+  text-align: center;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -49,8 +51,8 @@
 
 .modal__title {
   margin-bottom: 12px;
-  @include modal-title-font();
-  color: var(--secondary-black-color);
+  text-align: center;
+  @include font(Roboto, 20px, 700, 1.15, 0.03em, var(--secondary-black-color));
 }
 .modal__form-field {
   margin-bottom: 10px;
@@ -84,8 +86,7 @@
 .input__label {
   display: block;
   margin-bottom: 4px;
-  @include modal-label-font();
-  color: var(--main-text-color);
+  @include font(Roboto, 12px, 400, 1.17, 0.01em, var(--main-text-color));
 }
 .modal__comment-field {
   display: block;
@@ -105,8 +106,7 @@
     border-color: var(--main-blue-color);
   }
   &::placeholder {
-    @include modal-label-font();
-    color: rgba(117, 117, 117, 0.5);
+    @include font(Roboto, 12px, 400, 1.17, 0.01em, rgba(117, 117, 117, 0.5));
   }
 }
 .modal__checkbox-field {
@@ -116,11 +116,14 @@
   margin-bottom: 30px;
 }
 .modal__checkbox-text {
-  @extend %flex-elements;
-  @include modal-check-font();
-  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @include font(Roboto, 14px, 400, 1.71, 0.03em, var(--main-text-color));
   span {
-    @extend %flex-elements;
+    display: flex;
+    align-items: center;
+    text-align: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--main-black-color);
@@ -148,21 +151,21 @@
   }
 }
 .checkbox__terms {
-  @include modal-check-font();
-  color: var(--main-blue-color);
+  @include font(Roboto, 14px, 400, 1.71, 0.03em, var(--main-blue-color));
   text-decoration: underline solid var(--main-blue-color);
   text-decoration-skip-ink: none;
 }
 .modal__submit-button {
-  @extend %flex-elements;
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-blue-color);
   border: none;
   border-radius: 4px;
-  @include main-buttons-font();
-  color: var(--main-white-color);
+  @include font(Roboto, 16px, 700, 1.87, 0.06em, var(--main-white-color));
   cursor: pointer;
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option);

@@ -150,31 +150,6 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-// MODAL FONTS
-@mixin modal-title-font() {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-}
-@mixin modal-label-font() {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-@mixin modal-check-font() {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 // PORTFOLIO FONTS
 @mixin portfolio-filter-btn-font() {
   font-family: Roboto, sans-serif;

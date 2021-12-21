@@ -107,7 +107,9 @@
   outline: none;
 }
 .subscribe-button {
-  @extend %flex-elements;
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 28px 10px 29px;
