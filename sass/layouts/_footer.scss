@@ -6,25 +6,30 @@
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-  @include logo-font();
-  color: var(--main-blue-color);
+  @include font(Raleway, 26px, 700, 1.19, 0.03em, var(--main-blue-color));
 }
 .footer-logo__right {
-  @include logo-font();
-  color: var(--main-white-color);
+  @include font(Raleway, 26px, 700, 1.19, 0.03em, var(--main-white-color));
 }
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-contacts__item-address {
   margin-bottom: 9px;
-  @include footer-address-font();
-  color: var(--main-white-color);
+  font-style: normal;
+  @include font(Roboto, 14px, 400, 1.71, 0.03em, var(--main-white-color));
 }
 
 .contacts-link-footer {
-  @include footer-contacts-link-font();
-  color: var(--transparent-white-color);
+  @include font(
+    Roboto,
+    14px,
+    400,
+    1.71,
+    0.03em,
+    var(--transparent-white-color)
+  );
+  font-style: normal;
   transition: color var(--main-effects-option);
   &:hover,
   &:focus,
@@ -73,8 +78,7 @@
 }
 .join-us__text {
   margin-bottom: 20px;
-  @include footer-subscribe-font();
-  color: var(--main-white-color);
+  @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--main-white-color));
 }
 .join-us__icon {
   fill: var(--main-white-color);
@@ -88,8 +92,8 @@
 }
 .subscribe__title {
   margin-bottom: 20px;
-  @include footer-subscribe-font();
-  color: var(--main-white-color);
+  text-transform: uppercase;
+  @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--main-white-color));
 }
 .subscribe-input {
   display: block;
@@ -102,8 +106,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  @include footer-input-font();
-  color: rgba(255, 255, 255, 0.6);
+  @include font(Roboto, 16px, 400, 1.25, 0.03em, rgba(255, 255, 255, 0.6));
   outline: none;
 }
 .subscribe-button {
@@ -116,8 +119,7 @@
   background-color: var(--main-blue-color);
   border: none;
   border-radius: 4px;
-  @include main-buttons-font();
-  color: var(--main-white-color);
+  @include font(Roboto, 16px, 700, 1.87, 0.06em, var(--main-white-color));
   cursor: pointer;
   transition: color var(--main-effects-option),
     background-color var(--main-effects-option);
