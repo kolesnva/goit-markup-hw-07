@@ -1,7 +1,7 @@
 .our-work__title {
   margin-bottom: 50px;
-  @include main-title-font();
-  color: var(--secondary-black-color);
+  text-align: center;
+  @include font(Roboto, 36px, 700, 1.17, 0.03em, var(--secondary-black-color));
 }
 .our-work-list {
   display: flex;
@@ -30,6 +30,6 @@
   bottom: 0;
   transform: translateY(100%);
   transition: transform var(--main-effects-option);
-  @include our-work-overlay-font();
-  color: var(--main-white-color);
+  text-transform: uppercase;
+  @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--main-white-color));
 }
