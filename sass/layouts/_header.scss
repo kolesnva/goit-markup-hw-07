@@ -9,12 +9,10 @@
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
-  @include logo-font();
-  color: var(--main-blue-color);
+  @include font(Raleway, 26px, 700, 1.19, 0.03em, var(--main-blue-color));
 }
 .header-logo__right {
-  @include logo-font();
-  color: var(--main-black-color);
+  @include font(Raleway, 26px, 700, 1.19, 0.03em, var(--main-black-color));
 }
 .nav {
   display: flex;
@@ -30,8 +28,7 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include nav-link-font();
-  color: var(--secondary-black-color);
+  @include font(Roboto, 14px, 500, 1.14, 0.02em, var(--secondary-black-color));
   transition: color var(--main-effects-option);
   &:hover,
   &:focus,
@@ -43,8 +40,7 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include nav-link-font();
-  color: var(--main-blue-color);
+  @include font(Roboto, 14px, 500, 1.14, 0.02em, var(--main-blue-color));
   position: relative;
   &::after {
     content: "";
@@ -73,8 +69,7 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include contacts-link-font();
-  color: var(--main-text-color);
+  @include font(Roboto, 14px, 500, 1.14, 0.02em, var(--main-text-color));
   transition: color var(--main-effects-option);
   &:hover,
   &:focus,
