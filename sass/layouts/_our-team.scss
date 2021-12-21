@@ -3,8 +3,8 @@
 }
 .team__title {
   margin-bottom: 50px;
-  @include main-title-font();
-  color: var(--secondary-black-color);
+  text-align: center;
+  @include font(Roboto, 36px, 700, 1.17, 0.03em, var(--secondary-black-color));
 }
 .team-list {
   display: flex;
@@ -12,8 +12,8 @@
 }
 .team__item-title {
   margin-bottom: 10px;
-  @include our-team-subtitle-font();
-  color: var(--secondary-black-color);
+  text-align: center;
+  @include font(Roboto, 16px, 500, 1.19, 0.03em, var(--secondary-black-color));
 }
 .team__item {
   margin-right: 30px;
@@ -30,8 +30,8 @@
 }
 .team__item-text {
   margin-bottom: 16px;
-  @include our-team-text-font();
-  color: var(--main-text-color);
+  text-align: center;
+  @include font(Roboto, 16px, 400, 1.19, 0.03em, var(--main-text-color));
 }
 .team__socials-list {
   display: flex;
