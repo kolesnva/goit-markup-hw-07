@@ -5,7 +5,7 @@
         "../sass/main.scss",
         "../sass/vendors/_modern-normalize.scss",
         "../sass/utils/_reset.scss",
-        "../sass/utils/_fonts.scss",
+        "../sass/utils/_mixin.scss",
         "../sass/utils/_variables.scss",
         "../sass/components/_container.scss",
         "../sass/utils/_visually-hidden.scss",
@@ -17,8 +17,7 @@
         "../sass/layouts/_customers.scss",
         "../sass/layouts/_footer.scss",
         "../sass/layouts/_projects.scss",
-        "../sass/components/_modal.scss",
-        "../sass/utils/_placeholders.scss"
+        "../sass/components/_modal.scss"
     ],
     "names": [],
     "file": "main.css"

@@ -1,6 +1,6 @@
 @import "./vendors/modern-normalize";
 @import "./utils/reset";
-@import "./utils/fonts";
+@import "./utils/mixin";
 @import "./utils/variables";
 @import "./components/container";
 @import "./utils/visually-hidden";
@@ -13,4 +13,3 @@
 @import "./layouts/footer";
 @import "./layouts/projects";
 @import "./components/modal";
-@import "./utils/placeholders";
