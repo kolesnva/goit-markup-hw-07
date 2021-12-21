@@ -25,10 +25,9 @@
 }
 .features-item__title {
   margin-bottom: 10px;
-  @include features-subtitles-font();
-  color: var(--secondary-black-color);
+  text-transform: uppercase;
+  @include font(Roboto, 14px, 700, 1.14, 0.03em, var(--secondary-black-color));
 }
 .features-item__text {
-  @include main-text-font();
-  color: var(--main-text-color);
+  @include font(Roboto, 14px, 400, 1.71, 0.03em, var(--main-text-color));
 }
