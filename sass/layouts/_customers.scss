@@ -1,7 +1,7 @@
 .customers__title {
   margin-bottom: 50px;
-  @include main-title-font();
-  color: var(--secondary-black-color);
+  text-align: center;
+  @include font(Roboto, 36px, 700, 1.17, 0.03em, var(--secondary-black-color));
 }
 .customers-list {
   display: flex;
